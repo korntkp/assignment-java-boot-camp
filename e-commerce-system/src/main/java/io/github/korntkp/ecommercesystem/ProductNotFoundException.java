@@ -1,7 +1,7 @@
 package io.github.korntkp.ecommercesystem;
 
 public class ProductNotFoundException extends RuntimeException {
-    public ProductNotFoundException(String name) {
-        super(name);
+    public ProductNotFoundException(int id) {
+        super(id + "");
     }
 }
