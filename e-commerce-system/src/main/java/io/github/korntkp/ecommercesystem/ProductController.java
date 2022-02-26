@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class ProductController {
     @Autowired
@@ -16,9 +18,14 @@ public class ProductController {
         return productService.findProductById(id);
     }
 
-//    @GetMapping("/product/{name}")
-//    public Product getProductByName(@PathVariable String name) {
-//        return productService.findProductByName(name);
+    @GetMapping("/products")
+    public List<Product> getAllProducts() {
+        return productService.findAll();
+    }
+
+//    @GetMapping("/products")
+//    public List<Product> getProductByName() {
+//        return productService.findAll();
 //    }
 
 //    @GetMapping("/products")
