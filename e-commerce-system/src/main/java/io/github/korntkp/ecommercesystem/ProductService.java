@@ -15,7 +15,6 @@ public class ProductService {
         if (product.isPresent()) {
             return product.get();
         }
-        // TODO: throw new ProductNotFoundException(name);
-        throw new RuntimeException("Not found");
+        throw new ProductNotFoundException(name);
     }
 }
