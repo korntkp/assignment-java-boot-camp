@@ -22,11 +22,8 @@ public class ProductService {
     public List<Product> findAll() {
         return productRepository.findAll();
     }
-//    public Product findProductByName(String name) {
-//        Optional<Product> product = productRepository.findByName(name);
-//        if (product.isPresent()) {
-//            return product.get();
-//        }
-//        throw new ProductNotFoundException(name);
-//    }
+
+    public List<Product> findProductsByName(String name) {
+        return productRepository.findAllByName(name);
+    }
 }

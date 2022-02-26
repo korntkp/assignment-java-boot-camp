@@ -19,17 +19,12 @@ public class ProductController {
     }
 
     @GetMapping("/products")
-    public List<Product> getAllProducts() {
+    public List<Product> findAll() {
         return productService.findAll();
     }
 
-//    @GetMapping("/products")
-//    public List<Product> getProductByName() {
-//        return productService.findAll();
-//    }
-
-//    @GetMapping("/products")
-//    public Product getProducts(@RequestParam String name) {
-//        return productService.findProductByName(name);
-//    }
+    @GetMapping("/products/{name}")
+    public List<Product> getProductByName(@PathVariable String name) {
+        return productService.findProductsByName(name);
+    }
 }
