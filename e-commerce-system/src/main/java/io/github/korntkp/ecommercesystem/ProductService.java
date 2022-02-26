@@ -10,11 +10,18 @@ public class ProductService {
     @Autowired
     ProductRepository productRepository;
 
-    public Product findProductByName(String name) {
-        Optional<Product> product = productRepository.findByName(name);
+    public Product findProductById(int id) {
+        Optional<Product> product = productRepository.findById(id);
         if (product.isPresent()) {
             return product.get();
         }
-        throw new ProductNotFoundException(name);
+        throw new ProductNotFoundException(id);
     }
+//    public Product findProductByName(String name) {
+//        Optional<Product> product = productRepository.findByName(name);
+//        if (product.isPresent()) {
+//            return product.get();
+//        }
+//        throw new ProductNotFoundException(name);
+//    }
 }
