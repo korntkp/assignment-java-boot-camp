@@ -11,6 +11,10 @@ public class ProductService {
     @Autowired
     ProductRepository productRepository;
 
+    public void setProductRepository(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
     public Product findProductById(int id) {
         Optional<Product> product = productRepository.findById(id);
         if (product.isPresent()) {

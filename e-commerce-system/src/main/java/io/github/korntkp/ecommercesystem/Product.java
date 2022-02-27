@@ -18,6 +18,11 @@ public class Product {
     public Product() {
     }
 
+    public Product(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Product(int id, String name, String fullName, String description) {
         this.id = id;
         this.name = name;
