@@ -1,4 +1,4 @@
-package io.github.korntkp.ecommercesystem;
+package io.github.korntkp.ecommercesystem.product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

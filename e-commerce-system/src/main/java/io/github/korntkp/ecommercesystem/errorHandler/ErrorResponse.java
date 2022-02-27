@@ -1,4 +1,4 @@
-package io.github.korntkp.ecommercesystem;
+package io.github.korntkp.ecommercesystem.errorHandler;
 
 public class ErrorResponse {
     private int code;

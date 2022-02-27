@@ -1,5 +1,9 @@
-package io.github.korntkp.ecommercesystem;
+package io.github.korntkp.ecommercesystem.product;
 
+import io.github.korntkp.ecommercesystem.errorHandler.ProductNotFoundException;
+import io.github.korntkp.ecommercesystem.product.Product;
+import io.github.korntkp.ecommercesystem.product.ProductRepository;
+import io.github.korntkp.ecommercesystem.product.ProductService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
