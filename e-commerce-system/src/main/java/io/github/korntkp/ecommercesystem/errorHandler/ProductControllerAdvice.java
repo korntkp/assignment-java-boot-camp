@@ -1,4 +1,4 @@
-package io.github.korntkp.ecommercesystem;
+package io.github.korntkp.ecommercesystem.errorHandler;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

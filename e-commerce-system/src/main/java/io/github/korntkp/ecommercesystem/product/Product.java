@@ -1,4 +1,4 @@
-package io.github.korntkp.ecommercesystem;
+package io.github.korntkp.ecommercesystem.product;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
