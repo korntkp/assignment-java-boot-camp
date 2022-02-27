@@ -11,6 +11,10 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
+    public void setCustomerRepository(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
     public Customer getCustomerById(int id) {
         Optional<Customer> result = customerRepository.findById(id);
         if (result.isPresent()) {
