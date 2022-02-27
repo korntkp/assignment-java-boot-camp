@@ -290,6 +290,15 @@
 
 [https://github.com/korntkp/assignment-java-boot-camp/projects/2](https://github.com/korntkp/assignment-java-boot-camp/projects/2)
 
+- To do (สิ่งที่ต้องทำ)
+  - ลำดับงานที่ต้องทำก่อน เรียงจากบนลงล่าง
+- Doing (สิ่งที่กำลังทำ)
+  - ควรดึงมาทำทีละ card
+  - Convert into issue เพื่อแปลงเป็น issue
+- Waiting (สิ่งที่ต้องรอ)
+  - ดึงจาก Doing มาไว้ที่ waiting เมื่อติดปัญหาหรือมีงานอื่นมาแทรก
+- Done (สิ่งที่ทำเสร็จแล้ว)
+
 ---
 
 ## Improvement
