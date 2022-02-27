@@ -1,5 +1,8 @@
 package io.github.korntkp.ecommercesystem;
 
+import io.github.korntkp.ecommercesystem.customer.Customer;
+import io.github.korntkp.ecommercesystem.customer.CustomerController;
+import io.github.korntkp.ecommercesystem.customer.CustomerRepository;
 import io.github.korntkp.ecommercesystem.product.Product;
 import io.github.korntkp.ecommercesystem.product.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +15,8 @@ import javax.annotation.PostConstruct;
 public class ECommerceSystemApplication {
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private CustomerRepository customerRepository;
 
     @PostConstruct
     public void xyz() {
@@ -21,6 +26,9 @@ public class ECommerceSystemApplication {
         productRepository.save(product1);
         productRepository.save(product2);
         productRepository.save(product3);
+
+        Customer customer1 = new Customer(1, "Somchai") ;
+        customerRepository.save(customer1);
     }
 
     public static void main(String[] args) {
